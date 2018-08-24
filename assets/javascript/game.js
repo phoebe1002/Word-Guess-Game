@@ -11,7 +11,12 @@ function reset() {
         underscores.push('_');
     }
 
-    //display underscores
+    //display underscores on the page
     document.getElementById("display").innerHTML = underscores.join(" ");
 }
 
+window.addEventListener("onload", reset());
+
+document.onkeyup = function(event) {
+    var userInput = event.key;
+};
