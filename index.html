@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Hangman Game</title>
-</head>
-<body>
-	<div id="show"></div>
-	<p id="remaining-guesses"> </p>
-	<p id="wins"> </p>
-	<p id="losses"> </p>
-	<div id="wrong-guesses"></div>
+  <head>
+      <title>Hangman Game</title>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- Link to Css -->
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <!-- Reset Css -->
+		  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  </head>
+  <body>
+      <!-- Header -->
+    <header class="game">
+        <h1 id="game-info">Hangman Game</h1>
+        <h6>Please press any keys to start the game!</h6>
+    </header>
+    <br/>
 
+    <!-- Main content -->
+    <div class="container">
 
+      <!-- Game theme-->
+      <div class="game-theme">
+      <h5>How well do you know about Asia?</h5>
+      <h1 id="game-info">Guess a Country!</h1>
+        <img src="assets/images/asia_worldmap.gif" width="40%" height="auto">
+      
+      <!-- Game score -->
+      <div class="count-display">
+          <p>Wins: <span id="wins-count">0</span></p>
+          <p>Losses: <span id="losses-count">0</span></p>
+      </div>
 
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
-</body>
+      <!-- Word placehold -->
+      <div id="show"></div>
+        
+      <br/>
+
+      <!-- Wrong guesses content -->
+      <div class="wrong-guesses-content">
+        <!-- Guess  attamp left reminder -->
+        <p>Attempts Left: <span id="remaining-guesses"></span></p>
+        <!-- Wrong guesses list -->
+        <h5>-Wrong Guesses-</h5>
+        <p id="wrong-guesses"></p>
+      </div>
+    </div>
+   
+    <!-- Link to Javascript -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+  </body>
 </html>
+

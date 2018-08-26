@@ -1,35 +1,56 @@
-header {
+/* general */
+.game, .container {
 	border: 3px solid black;
-	height: 150px;
+	height: auto;
 	width: 80%;
 	text-align: center;
 	margin: 0 auto;
-	font-size: 20px;
+	padding-bottom: 5px;
+	font-size: 18px;
+	line-height: 1.6;
 }
 
-.underscores {
-	border: 3px solid black;
-	height: 150px;
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 60px;
+/* game info */
+#game-info {
+	font-size: 25px;
+	font-weight: bold;
+}
+.game-theme {
+	position: relative;
 }
 
-.rightGuess {
-	border: 3px solid black;
-	height: 150px;
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 20px;
+/* game score */
+.count-display {
+	position: absolute;
+	top: 35%;
+	right: 43%;
+	padding: 6px;
+	background-color: #f8f9fa;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	color: orangered;
 }
 
-.wrongGuess {
-	border: 3px solid black;
-	height: 150px;
-	width: 80%;
-	text-align: center;
-	margin: 0 auto;
-	font-size: 20px;
+/* placeholder */
+#show {
+	font-size: 35px;
+}
+
+/* wrong guesses content */
+.wrong-guesses-content {
+	border-left: 1px dotted #ccc;
+	border-right: 1px dotted #ccc;
+	margin: 0 35% 0 35%;
+	font-size: 18px;
+	color: #333;
+}
+
+/* wrong guesses list*/
+#wrong-guesses{
+	border: 2px dotted #ccc;
+	display: block;
+	color: crimson;
+	font-size: 25px;
+	margin: 0 35% 0 35%;
+	padding: 5px;
 }
