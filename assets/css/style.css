@@ -54,3 +54,48 @@
 	margin: 0 35% 0 35%;
 	padding: 5px;
 }
+
+/* media queries */
+
+/* 980px max-width media query  */
+@media screen and (max-width: 980px){
+	body { 
+	  margin: 0;
+	}
+
+	.wrong-guesses-content {
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	}
+
+	.count-display {
+		display: inline-block;
+		top: 20%;
+	}
+} 
+
+/* 768px max-width media query  */
+@media screen and (max-width: 768px) {
+	body {
+	  width: 90%;
+	  padding: 0 20px 20px 20px;
+	}
+  }
+
+/* 640px max-width media query */
+@media screen and (max-width: 640px) {
+	body {
+	width: 100%;
+	}
+
+	.wrong-guesses-content {
+    font-size: 0.7rem;
+	line-height: 1.5rem; 
+  } 
+
+  	.count-display {
+	display: inline-block;
+	top: 20%;
+	right: 38%;
+	}
+}
