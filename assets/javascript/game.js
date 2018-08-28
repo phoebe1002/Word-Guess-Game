@@ -18,7 +18,8 @@ function reset() {
     // randamly pick a word from a workBank 
     var index = Math.floor(Math.random() * wordBank.length);
     currentWord = wordBank[index];
-    // console.log(currentWord); - use to test out which word is picked up
+    // use to test out which word is picked
+    console.log(currentWord);
     // create underscores according to the length of the currenWord 
     underscores = [];
     for(i = 0; i < currentWord.length; i++) {
@@ -75,9 +76,9 @@ document.onkeyup = async function(event) {
         // the conditions to test user wins the game. if there are underscores left and remainingGuesses still remain in the play attampt. 
         if (underscores.indexOf('_') == -1 && remainingGuesses !== 0){ // if there are no underscores left
             document.getElementById("show").innerHTML = currentWord;
-            alert("Congrats! You rock it!!!")
             // pause the page to show the mystery word
             await sleep(2000);
+            alert("Congrats! You rock it!!!")
             // count the numbers of wins and display on the page
             wins++;
             document.getElementById("wins-count").innerHTML = wins;
